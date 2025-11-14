@@ -14,7 +14,6 @@ async function checkWeather(city) {
             alert("City not found");
             return;
         }
-
         document.querySelector(".city").innerHTML = data.name;
         document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
         document.querySelector(".Humidity").innerHTML = data.main.humidity + "%";
